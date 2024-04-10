@@ -76,7 +76,8 @@ int main()
     {
         //TODO: Insert daemon code here.
         syslog (LOG_NOTICE, "First daemon started.");
-        sleep (20);
+	while (1)
+        	sleep (1);
         break;
     }
 
